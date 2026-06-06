@@ -10,23 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
 <header class="site-header">
     <nav class="navbar">
         <div class="nav-left">
-            <button class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="links">
-                <li><a href=#gazowane>Gazowane</a></li>
-                <li><a href="#bez-cukru">Bez-cukru</a></li>
-                <li><a href=#cieple>Ciepłe</a></li>
-            </ul>
-        </div>
+            </div>
         <div class="nav-logo">
             <img src="img/logo.png" alt="Brand Logo">
             <span class="logo-name">THIRSTY</span>
@@ -48,7 +38,7 @@
                     <span class="product-size">250ml</span>
                     <div class="product-footer">
                         <span class="product-price">$3.00</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="1">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -62,7 +52,7 @@
                     <span class="product-size">330ml</span>
                     <div class="product-footer">
                         <span class="product-price">$2.00</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="2">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -76,7 +66,7 @@
                     <span class="product-size">330ml</span>
                     <div class="product-footer">
                         <span class="product-price">$2.00</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="3">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -90,7 +80,7 @@
                     <span class="product-size">500ml</span>
                     <div class="product-footer">
                         <span class="product-price">$4.00</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="4">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -104,7 +94,7 @@
                     <span class="product-size">330ml</span>
                     <div class="product-footer">
                         <span class="product-price">$2.20</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="5">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -118,7 +108,7 @@
                     <span class="product-size">330ml</span>
                     <div class="product-footer">
                         <span class="product-price">$2.50</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="6">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -132,21 +122,21 @@
                     <span class="product-size">330ml</span>
                     <div class="product-footer">
                         <span class="product-price">$2.00</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="7">Do koszyka</button>
                     </div>
                 </div>
             </article>
 
             <article class="product-card">
                 <div class="product-image">
-                    <img src="img/peps_zero.jpg" alt="Pepsi Zero">
+                    <img src="img/pepsi_zero.jpg" alt="Pepsi Zero">
                 </div>
                 <div class="product-info">
                     <h2>Pepsi Zero</h2>
                     <span class="product-size">330ml</span>
                     <div class="product-footer">
                         <span class="product-price">$2.00</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="8">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -160,7 +150,7 @@
                     <span class="product-size">250ml</span>
                     <div class="product-footer">
                         <span class="product-price">$3.50</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="9">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -174,7 +164,7 @@
                     <span class="product-size">250ml</span>
                     <div class="product-footer">
                         <span class="product-price">$3.50</span>
-                        <button class="add-to-cart-btn">Do koszyka</button>
+                        <button class="add-to-cart-btn" data-id="10">Do koszyka</button>
                     </div>
                 </div>
             </article>
@@ -188,18 +178,7 @@
         </div>
         
         <div class="cart-items" id="cart-items-container">
-            <div class="cart-item">
-                <div class="cart-item-image">
-                    <img src="img/cola.jpg" alt="Produkt w koszyku">
-                <div class="cart-item-details">
-                    <h3 class="cart-item-name">Nazwa napoju</h3>
-                    <span class="cart-item-size">200ml</span>
-                    <span class="cart-item-price">$0.00</span>
-                </div>
-                <button class="cart-item-remove" aria-label="Usuń z koszyka">&times;</button>
-            </div> 
-            </div>
-
+        </div>
         <div class="cart-summary">
             <div class="total-row">
                 <span>Suma</span>

@@ -8,6 +8,71 @@ body{
 }
 
 
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #products {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #products h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .product-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .cart-sidebar {
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+        border-left: none;
+        border-top: 2px solid #eee;
+        padding-top: 20px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar .links {
+        display: flex;
+        gap: 15px;
+    }
+}
 .navbar{
     display:flex;
     align-items: center;
@@ -18,53 +83,7 @@ body{
     padding:0 50px;
     border-bottom: 1px solid #abd6f3;
 }
-.nav-left{
-    display:flex;
-    align-items: center;
-}
-.menu-toggle{
-    background:none;
-    cursor: pointer;
-    padding: 10px 5px;
-    display:flex;
-    flex-direction: column;
-    gap:5px;
-    border:none;
-}
-.menu-toggle>.bar{
-    display:block;
-    width:25px;
-    height:3px;
-    background-color: #000;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-.nav-left>.links{
-    position:fixed;
-    top:0;
-    left:-280px;
-    width:280px;
-    height:100vh;
-    background-color: #fff;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
-    list-style: none;
-    padding: 80px 30px;
-    display:flex;
-    flex-direction: column;
-    gap:20px;
-    transition: transfrom 0.3s ease;
-    z-index: 1000;
-}
-.nav-left>.links a{
-    text-decoration: none;
-    color:#333;
-    font-size:1.1rem;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-.nav-left>.links a:hover{
-    color:#000;
-}
+
 
 .nav-logo{
     position:absolute;
