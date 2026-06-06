@@ -70,12 +70,14 @@ const produkty = [
         image: "img/redbull_zero.jpg"
     }
 ];
-
-let koszyk=[];
+const zapisanyKoszyk = localStorage.getItem("koszykSklepowy");
+let koszyk= zapisanyKoszyk ? JSON.parse(zapisanyKoszyk) : [];
 
 const przyciskDodawania = document.querySelectorAll('.add-to-cart-btn');
 const kontenerKoszyka = document.getElementById('cart-items-container');
 const Cenacalkowita = document.getElementById('cart-total-price');
+odswiezWidokKoszyka();
+
 
 przyciskDodawania.forEach(przycisk => {
     przycisk.addEventListener('click',(event)=>{
@@ -147,5 +149,8 @@ przyciskZamow.addEventListener('click', () => {
         alert("Twoj koszyk jest pusty");
         return;
     }
+    localStorage.setItem('koszykSklepowy',JSON.stringify(koszyk));
     window.location.href = "formularz.html";
 });
+
+

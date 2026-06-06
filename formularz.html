@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="form.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -23,25 +25,34 @@
         </div>
     </nav>
 </header>
-<main>
-    <section id="products">
-        <h1>Dane do zamówienia</h1>
-        
-    </section>
-
-    <aside class="cart-sidebar">
+<body>
+<aside class="cart-sidebar">
         <div class="cart-header">
-            <h2>Cart</h2>
+            <h2>Twoje zamówienie (Koszyk)</h2>
         </div>
         
-        <div class="cart-items" id="cart-items-container">
-        </div>
+        <div class="cart-items" id="cart-items-container"></div>
+        
         <div class="cart-summary">
             <div class="total-row">
                 <span>Suma</span>
-                <span class="total-price" id="cart-total-price">0</span>
+                <span class="total-price" id="cart-total-price">$0.00</span>
             </div>
-        </div>
-    </aside>
-</main>
+            </div>
+    </aside> 
+<div class="form-container">
+    <h1>Dostawa</h1>
+    <p>Wprowadź swoje dane aby dokończyć zakup</p>
+    <form id="order-form">
+        <input type="text" id="first-name" placeholder="Imie" required>
+        <input type="text" id="last-name" placeholder="Nazwisko" required>
+        <input type="text" id="address" placeholder="Adres" required>
+        <button type="submit" class="submit-btn">Potwierdź</button>
+    </form>
+</div>
+<a href="index.html" class="back-link">Wróć do sklepu</a>
+
 </body>
+</html>
+
+
