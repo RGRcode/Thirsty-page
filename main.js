@@ -114,6 +114,7 @@ kontenerKoszyka.addEventListener('click',(event) =>{
             }
         }
         odswiezWidokKoszyka();
+        localStorage.setItem('koszykSklepowy', JSON.stringify(koszyk));
     }
 });
 
